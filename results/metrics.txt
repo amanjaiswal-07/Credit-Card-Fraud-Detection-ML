@@ -1,0 +1,22 @@
+# Model Evaluation Summary
+
+Model: Random Forest Classifier
+Dataset: Credit Card Fraud Detection (Kaggle)
+
+Train/Test Split: 80/20
+Scaler Used: StandardScaler()
+
+Results:
+------------
+Accuracy                     : 0.9995962220427653
+Precision                    : 0.9746835443037974
+Recall                       : 0.7857142857142857
+F1-Score                     : 0.8700564971751412
+Matthews Correlation Coefficient (MCC) : 0.8749276812909632
+
+Observations:
+- The Random Forest model performs extremely well overall (≈99.96% accuracy).
+- High precision indicates the model rarely mislabels genuine transactions as fraud.
+- Slightly lower recall shows some fraudulent cases may still be missed.
+- The MCC value (~0.875) confirms strong balanced performance across classes.
+- Future improvements could include class rebalancing (e.g., SMOTE) or tuning n_estimators.
